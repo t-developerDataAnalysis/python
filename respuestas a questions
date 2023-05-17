@@ -1,0 +1,48 @@
+
+
+joacovega@mail.com
+Suppose you want to use the Wilcoxon rank sum test to detect a shift in distribution 1 to the right of distribution 2 based on samples of size  n1=6
+  and  n2=8
+ . Should you use  T1
+  or  T∗1
+  as the test statistic?
+When using the Wilcoxon rank sum test to compare two samples, the test statistic depends on the sample size and whether or not the two samples have the same number of observations.
+
+When the sample sizes are equal, the test statistic T and T* are equivalent and can be used interchangeably. However, when the sample sizes are unequal, T* is typically used instead of T to account for the unequal sample sizes.
+
+In this case, since the sample sizes are different (n1=6 and n2=8), you should use T* as the test statistic in the Wilcoxon rank sum test.
+
+
+
+
+
+joacovega@mail.com
+Suppose you wish to detect a difference in the locations of two population distributions based on a paired-difference experiment consisting of  n=30
+  pairs. What is the test statistic for Wilcoxon signed-rank test?
+The Wilcoxon signed-rank test is used to test for a difference in location between two paired populations, where the differences between the pairs are not normally distributed. The test statistic for the Wilcoxon signed-rank test is based on the sum of the ranks of the positive or negative differences, whichever is smaller.
+
+Here are the steps to compute the test statistic for the Wilcoxon signed-rank test:
+
+Calculate the differences between each pair of observations.
+Rank the absolute values of the differences from smallest to largest.
+Assign positive or negative signs to the ranks based on the sign of the differences.
+Calculate the sum of the ranks for the positive differences.
+
+
+
+When to use Spearman correlation
+Spearman correlation is used when you want to assess the association or relationship between two variables, and one or both of the variables are measured on an ordinal or continuous scale, but the relationship between the two variables may not be linear.
+
+In particular, Spearman correlation is used when you want to test whether there is a monotonic relationship between two variables. A monotonic relationship is a relationship where the variables tend to change in the same direction, but not necessarily at a constant rate. The Spearman correlation coefficient measures the strength and direction of the monotonic relationship between the two variables.
+
+Spearman correlation is also robust to outliers and non-normality of the data, which makes it useful when the data do not meet the assumptions of the Pearson correlation coefficient. However, it is important to note that Spearman correlation is less sensitive than Pearson correlation to detecting linear relationships.
+
+In summary, Spearman correlation should be used when you want to assess the strength and direction of the monotonic relationship between two variables that may not meet the assumptions of the Pearson correlation coefficient.
+
+
+
+
+
+Calculate the sum of the ranks for the negative differences.
+Take the smaller of the two sums as the test statistic.
+Since you have n=30 pairs, there will be n=30 differences. You will rank the absolute values of the differences from 1 to n=30. The test statistic will be the smaller of the sum of the ranks of the positive differences and the sum of the ranks of the negative differences.
